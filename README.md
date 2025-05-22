@@ -37,7 +37,7 @@
 ## 📂 Структура проекта
 
 ```
-k8s-local-cluster/
+lxc-local/
 ├── destroy.sh
 ├── README.md
 ├── scripts

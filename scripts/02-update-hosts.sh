@@ -6,7 +6,7 @@ CONTAINERS=("master" "node-0" "node-1")
 TIMEOUT=10
 SLEEP_INTERVAL=2
 
-echo "# k8s-lxc-hosts-start" | sudo tee -a /etc/hosts
+echo "# lxc-hosts-start" | sudo tee -a /etc/hosts
 
 for c in "${CONTAINERS[@]}"; do
   echo "⏳ Ожидаем IP для контейнера $c..."
@@ -31,6 +31,6 @@ for c in "${CONTAINERS[@]}"; do
   fi
 done
 
-echo "# k8s-lxc-hosts-end" | sudo tee -a /etc/hosts
+echo "# lxc-hosts-end" | sudo tee -a /etc/hosts
 
 echo "✅ Записи успешно добавлены в /etc/hosts."

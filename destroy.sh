@@ -32,7 +32,7 @@ done
 echo "🧹 Удаляем блок из /etc/hosts..."
 
 sudo cp /etc/hosts /etc/hosts.bak
-sudo sed -i '/# k8s-lxc-hosts-start/,/# k8s-lxc-hosts-end/d' /etc/hosts
+sudo sed -i '/# lxc-hosts-start/,/# lxc-hosts-end/d' /etc/hosts
 
 echo "✅ Блок удалён. Бэкап сохранён: /etc/hosts.bak"
 echo "🏁 Готово."
